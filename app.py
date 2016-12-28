@@ -33,7 +33,7 @@ def signUp():
         # validate the received values
         if _name and _email and _password:
             
-            # All Good, let's call MySQL
+            # let's call MySQL
             
             conn = mysql.connect()
             cursor = conn.cursor()
@@ -56,4 +56,5 @@ def signUp():
         conn.close()
 
 if __name__ == "__main__":
+    app.debug = True
     app.run(port=5001)
