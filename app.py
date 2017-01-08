@@ -57,4 +57,4 @@ def signUp():
 
 if __name__ == "__main__":
     app.debug = True
-    app.run(port=5001)
+    app.run(port=5001,passthrough_error=True)
